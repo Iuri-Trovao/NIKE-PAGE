@@ -238,6 +238,12 @@ body{
   .menu-principal{
     display: flex;
     
+    
+  }
+  @media (max-width: 1247px){
+    .menu-principal{
+      flex-direction: column;
+    }
   }
   .caixa-flexivel{
     flex: 1;
@@ -249,7 +255,6 @@ body{
   area cinza da main
 */
   .area-cinza{
-    background: ;
     display: flex;
     flex-direction: column;
   }
@@ -262,7 +267,7 @@ body{
     align-items: center;
   }
   .buttons-main{
-    background: ;
+
     height:300px;
     display: flex;
     flex-direction: row;
@@ -314,12 +319,16 @@ body{
 */
   .area-azul{
     background: rgb(109, 173, 230);
-    display: flex;
+    display: grid;
     
   }
-  .img-tenis{
-    height: 80%;
-    width: 100%;
-    justify-content: start;
-    
+  @media (max-width: 819px){
+    .img-tenis{
+      height: 80%;
+    }
+  }
+  @media (max-width: 678px){
+    .img-tenis{
+      height: 60%;
+    }
   }
